@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>โปรแกรมคำนวณจำนวนกล่องยาพ่น</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/app-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="container">
+  <h1>โปรแกรมคำนวณจำนวนกล่องยาพ่น 🤯💨</h1>
+</header>
+
+<main class="container">
+  <section class="card input">
+    <div class="row">
+      <label for="days">จำนวนวันนัด (Days)</label>
+      <input id="days" type="number" inputmode="numeric" placeholder="เช่น 30">
+      <div class="quick-days">
+        <span class="muted">เลือกวันนัดด่วน:</span>
+        <button type="button" class="btn chip qd" data-days="28">28</button>
+        <button type="button" class="btn chip qd" data-days="56">56</button>
+        <button type="button" class="btn chip qd" data-days="84">84</button>
+        <button type="button" class="btn chip qd" data-days="112">112</button>
+        <button type="button" class class="btn chip qd" data-days="140">140</button>
+        <button type="button" class="btn chip qd" data-days="168">168</button>
+      </div>
+    </div>
+    <div class="row actions">
+      <button class="btn outline" id="clearBtn">ล้างค่า</button>
+    </div>
+    <p class="hint">เลือกยา → กดพ่น/วัน 1–6 (หรือพิมพ์) → ติ๊กเพื่อส่งลง “สรุปสำหรับบุคลากร”</p>
+  </section>
+
+  <section class="filters">
+    <button class="pill active" data-filter="ALL">ทั้งหมด</button>
+    <button class="pill" data-filter="SABA">SABA</button>
+    <button class="pill" data-filter="SAMA">SAMA</button>
+    <button class="pill" data-filter="LABA">LABA</button>
+    <button class="pill" data-filter="LAMA">LAMA</button>
+    <button class="pill" data-filter="ICS">ICS</button>
+    <button class="pill" data-filter="NASAL">Nasal</button>
+  </section>
+
+  <section id="drugList"></section>
+
+  <section id="summarySec" class="card summary" style="display:none;">
+    <h3>สรุปสำหรับบุคลากร</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ยา</th><th>วันนัด</th><th>พ่น/วัน</th><th>Total puff</th><th>puff/กล่อง</th><th>จำนวนกล่อง</th>
+          </tr>
+        </thead>
+        <tbody id="summaryBody"></tbody>
+      </table>
+    </div>
+    <div class="summary-actions">
+      <button id="printSummary" class="btn">🖨️ ปริ้น “สรุปสำหรับบุคลากร”</button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">© 2025 ภก.กันตพงศ์ วงศ์เอนกเกษม · โรงพยาบาลนพรัตนราชธานี</footer>
+
+<script src="app.js"></script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js')}</script>
+</body>
+</html>
