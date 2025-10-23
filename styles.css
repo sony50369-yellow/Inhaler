@@ -1,0 +1,36 @@
+
+:root{--bg:#f7f8ff;--card:#fff;--ink:#101828;--muted:#667085;--brand:#675CF6;--bd:#E6E8EC}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans Thai',sans-serif}
+.container{max-width:1040px;margin:22px auto;padding:0 16px}
+h1{margin:0 0 10px}
+.panel,.summary{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:14px;box-shadow:0 6px 16px rgba(0,0,0,.04);margin-bottom:12px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.input{padding:10px 12px;border:1px solid var(--bd);border-radius:10px;min-width:180px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:0;background:#EEF2FF;color:#3730a3;padding:8px 10px;border-radius:999px;cursor:pointer}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tab{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 12px;cursor:pointer}
+.tab.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.card{position:relative;background:#fff;border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.card .bar{position:absolute;left:0;top:0;bottom:0;width:6px}
+.card .body{padding:12px}
+.card h3{margin:6px 0 4px;font-size:18px}
+.meta{color:var(--muted);font-size:13px}
+.controls-mini{display:flex;gap:10px;align-items:center;margin:8px 0}
+.controls-mini input{width:120px;padding:8px 10px;border:1px solid var(--bd);border-radius:10px}
+.quick{display:flex;gap:8px;flex-wrap:wrap}
+.quick .pill{border:1px dashed #cfd4dc;background:#fff;padding:6px 10px;border-radius:10px;cursor:pointer}
+.badge{position:absolute;right:12px;top:12px;background:#1d4ed8;color:#fff;padding:6px 10px;border-radius:999px;font-weight:800;font-size:12px;display:none}
+.card.selected .badge{display:inline-block}
+.imgwrap{position:absolute;right:10px;bottom:10px;width:110px;height:80px;overflow:hidden;border-radius:10px;border:1px solid #e5e7eb;background:#fff;display:block}
+.imgwrap img{width:100%;height:100%;object-fit:contain}
+.summary table{width:100%;border-collapse:collapse}
+.summary th,.summary td{border-bottom:1px solid var(--bd);padding:8px 10px;text-align:left}
+.summary .actions{display:flex;justify-content:flex-end;margin-top:10px}
+@media print{
+  body{background:#fff}
+  #top,.tabs,.grid,footer{display:none!important}
+  .summary{box-shadow:none;border:0;margin:0;padding:0}
+}

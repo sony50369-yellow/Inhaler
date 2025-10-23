@@ -1,0 +1,146 @@
+[
+  {
+    "id": "aerotamol_mdi",
+    "name": "Aerotamol MDI",
+    "tags": [
+      "SABA"
+    ],
+    "puffsPerBox": 200,
+    "color": "#D9EAF7",
+    "image": "aerotamol.png"
+  },
+  {
+    "id": "aerobidal_mdi",
+    "name": "Aerobidal MDI",
+    "tags": [
+      "SAMA+SABA"
+    ],
+    "puffsPerBox": 200,
+    "color": "#BFEFE9",
+    "image": "aerobidal.png"
+  },
+  {
+    "id": "aerotide_mdi_125",
+    "name": "Aerotide MDI 125",
+    "tags": [
+      "ICS+LABA"
+    ],
+    "puffsPerBox": 120,
+    "color": "#E9DDF6",
+    "image": "aerotide-125.png"
+  },
+  {
+    "id": "aerotide_mdi_250",
+    "name": "Aerotide MDI 250",
+    "tags": [
+      "ICS+LABA"
+    ],
+    "puffsPerBox": 120,
+    "color": "#E9DDF6",
+    "image": "aerotide-250.png"
+  },
+  {
+    "id": "aeronide_mdi_200",
+    "name": "Aeronide MDI 200",
+    "tags": [
+      "ICS"
+    ],
+    "puffsPerBox": 200,
+    "color": "#FCE6B1",
+    "image": "aeronide-200.png"
+  },
+  {
+    "id": "flixotide_evo_125",
+    "name": "Flixotide Evohaler 125",
+    "tags": [
+      "ICS"
+    ],
+    "puffsPerBox": 120,
+    "color": "#FAD0C9",
+    "image": "flixotide-125.png"
+  },
+  {
+    "id": "seretide_accu_50_250",
+    "name": "Seretide Accuhaler 50/250",
+    "tags": [
+      "ICS+LABA"
+    ],
+    "puffsPerBox": 60,
+    "color": "#E0D9FF",
+    "image": "seretide-50-250.png"
+  },
+  {
+    "id": "duorespiromax160",
+    "name": "Duoresp Spiromax 160/4.5",
+    "tags": [
+      "ICS+LABA"
+    ],
+    "puffsPerBox": 120,
+    "color": "#F0F6FF",
+    "image": "duoresp-160-4_5.png",
+    "shelfLifeDays": 90
+  },
+  {
+    "id": "duoresp_320_9",
+    "name": "DuoResp Spiromax 320/9",
+    "tags": [
+      "ICS+LABA"
+    ],
+    "puffsPerBox": 60,
+    "color": "#DDE4EC",
+    "image": "duoresp-320-9.png"
+  },
+  {
+    "id": "spiriva_handihaler_18",
+    "name": "Spiriva Handihaler 18",
+    "tags": [
+      "LAMA"
+    ],
+    "puffsPerBox": 30,
+    "color": "#E6F0E6",
+    "image": "spiriva-18.png"
+  },
+  {
+    "id": "avamys_27_5",
+    "name": "AVAMYS 27.5",
+    "tags": [
+      "Nasal"
+    ],
+    "puffsPerBox": 120,
+    "color": "#CFF7F8",
+    "image": "avamys.png"
+  },
+  {
+    "id": "mometasone_50",
+    "name": "Mometasone 50",
+    "tags": [
+      "Nasal"
+    ],
+    "puffsPerBox": 140,
+    "color": "#FFF4B3",
+    "image": "mometasone.png"
+  },
+  {
+    "id": "busonase_64",
+    "name": "Busonase 64",
+    "tags": [
+      "Nasal"
+    ],
+    "puffsPerBox": 120,
+    "color": "#EAEAEA",
+    "image": "busonase.png"
+  },
+  {
+    "id": "metzodin",
+    "name": "Metzodin",
+    "tags": [
+      "Nasal"
+    ],
+    "puffsPerBox": 65,
+    "color": "#D9EAF7",
+    "image": "metzodin.png",
+    "calcMode": "durationOnly",
+    "boxDurationDays": 56,
+    "note": "พ่นจมูกตามอาการ"
+  }
+]

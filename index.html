@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>โปรแกรมคำนวณจำนวนกล่องยาพ่น</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <meta name="theme-color" content="#675CF6">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>โปรแกรมคำนวณจำนวนกล่องยาพ่น</h1>
+    <p class="caption">Asthma | Allergic rhinitis | COPD </p>
+    <div id="top" class="panel">
+      <div class="row">
+        <label for="days">จำนวนวันนัด</label>
+        <input id="days" class="input" type="number" placeholder="เช่น 30" min="1">
+      </div>
+      <div class="row">
+        <div>เลือกวันนัดด่วน:</div>
+        <div id="days-quick" class="chips">
+          <button class="chip" data-days="28">28</button>
+          <button class="chip" data-days="56">56</button>
+          <button class="chip" data-days="84">84</button>
+          <button class="chip" data-days="112">112</button>
+          <button class="chip" data-days="140">140</button>
+          <button class="chip" data-days="168">168</button>
+        </div>
+        <button id="clear" class="chip" style="margin-left:auto">ล้างค่า</button>
+      </div>
+    </div>
+  <p class="hint">เลือกยา → ใส่พ่น/วัน  ระบบจะคำนวณ “กล่องที่ต้องจ่าย” </p>
+
+    <div id="tabs" class="tabs"></div>
+
+    <div id="grid" class="grid" aria-live="polite"></div>
+
+    <div class="summary">
+      <h2>สรุปผลสำหรับบุคลากร</h2>
+      <table>
+        <thead><tr><th>ยา</th><th>พ่น/วัน</th><th>วันนัด</th><th>puff/กล่อง</th><th>กล่องที่ต้องจ่าย</th></tr></thead>
+        <tbody id="sum-body"></tbody>
+        <tfoot><tr><td colspan="4" style="text-align:right">รวม</td><td id="sum-total">0</td></tr></tfoot>
+      </table>
+      <div class="actions">
+        <button id="printSummary" class="chip">🖨️ พิมพ์ “สรุปผลสำหรับบุคลากร”</button>
+      </div>
+      <div style="color:#667085;font-size:12px;margin-top:6px">© 2025 ภก.กันตพงศ์ วงศ์เอนกเกษม</div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script>if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js'); }</script>
+</body>
+</html>
