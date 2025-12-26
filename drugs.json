@@ -142,5 +142,15 @@
     "calcMode": "durationOnly",
     "boxDurationDays": 56,
     "note": "พ่นจมูกตามอาการ"
+  },
+  {
+    "id": "seretide_25_50",
+    "name": "Seretide Evohaler 25/50",
+    "tags": [
+      "ICS+LABA"
+    ],
+    "puffsPerBox": 120,
+    "color": "#FCE6B1",
+    "image": "seretide2550.png",
   }
 ]
